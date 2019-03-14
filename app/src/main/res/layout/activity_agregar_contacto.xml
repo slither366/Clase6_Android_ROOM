@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+
+    <EditText
+        android:id="@+id/edt_nombres"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombres"/>
+
+    <EditText
+        android:id="@+id/edt_apellidos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Apellidos"/>
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_camera"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_tomar_foto"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Tomar Foto"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/colorWhite"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/btn_guardar_contacto"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Guardar contacto"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/colorWhite"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+</LinearLayout>
